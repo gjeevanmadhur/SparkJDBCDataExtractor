@@ -24,9 +24,9 @@ object StartProcess {
     val sqlContext = new org.apache.spark.sql.hive.HiveContext(spark)
 
     val url: String = "jdbc:as400://xxx.xx.xxx.xxx:8471/"
-    val user: String = "diatool"
-    val password: String = "datalod9"
-    val databasename:String="INC0408949"
+    val user: String = "user"
+    val password: String = "password"
+    val databasename:String="123"
     val numbofparititon:String="50"
     val tablelist = gettableNames(args(0))
     //val reruntable=args(2)
