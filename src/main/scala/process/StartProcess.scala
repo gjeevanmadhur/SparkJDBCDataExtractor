@@ -64,7 +64,7 @@ object StartProcess {
           colrenam.select("*")
             .write.mode(SaveMode.Overwrite)
             .format("orc")
-            .save(s"hdfs://connsstgnn/apps/hive/warehouse/$database_name/$hadooptableName/run_date=$run_date")
+            .save(s"hdfs://user/$database_name/$hadooptableName/run_date=$run_date")
 
           }
         output match {
