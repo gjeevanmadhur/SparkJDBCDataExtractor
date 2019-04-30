@@ -23,7 +23,7 @@ object StartProcess {
     val spark = new SparkContext(conf)
     val sqlContext = new org.apache.spark.sql.hive.HiveContext(spark)
 
-    val url: String = "jdbc:as400://172.29.167.120:8471/INC0408949"
+    val url: String = "jdbc:as400://xxx.xx.xxx.xxx:8471/"
     val user: String = "diatool"
     val password: String = "datalod9"
     val databasename:String="INC0408949"
